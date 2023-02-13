@@ -1,7 +1,7 @@
 // 注: process.env.XX是Vercel的环境变量，配置方式见：https://docs.tangly1024.com/zh/features/personality
 const BLOG = {
   // Important page_id！！！Duplicate Template from  https://www.notion.so/tanghh/02ab3b8678004aa69e9e415905ef32a5
-  NOTION_PAGE_ID: process.env.NOTION_PAGE_ID || '',
+  NOTION_PAGE_ID: process.env.NOTION_PAGE_ID || '5ea00bc39efd4b4fbf88133cb2c63e0e',
   PSEUDO_STATIC: false, // 伪静态路径，开启后所有文章URL都以 .html 结尾。
   NEXT_REVALIDATE_SECOND: process.env.NEXT_PUBLIC_REVALIDATE_SECOND || 5, // 更新内容缓存间隔 单位(秒)；即每个页面有5秒的纯静态期、此期间无论多少次访问都不会抓取notion数据；调大该值有助于节省Vercel资源、同时提升访问速率，但也会使文章更新有延迟。
   THEME: process.env.NEXT_PUBLIC_THEME || 'hexo', // 主题， 支持 ['next','hexo',"fukasawa','medium','example'] @see https://preview.tangly1024.com
@@ -12,13 +12,13 @@ const BLOG = {
 
   AUTHOR: 'MichaelYuhe', // 作者
   BIO: 'Frontend Developer, Student, Zeabur Co-Founder', // 作者简介
-  LINK: 'https://tangly1024.com', // 网站地址
+  // LINK: 'https://tangly1024.com', // 网站地址
   KEYWORDS: 'Notion, 博客', // 网站关键词 英文逗号隔开
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
-  CONTACT_EMAIL: 'xiayuhang1106@gmail.com', // 邮箱
-  CONTACT_TWITTER: 'https://twitter.com/CoooolXyh', // 你的twitter个人主页
-  CONTACT_GITHUB: 'https://github.com/<MichaelYuhe>', // 你的github个人主页
-  CONTACT_TELEGRAM: 'https://t.me/MichaelYuhe', // 你的telegram 地址 例如 https://t.me/tangly_1024
+  CONTACT_EMAIL: 'xiayuhang1106@gmail.com',
+  CONTACT_TWITTER: 'https://twitter.com/CoooolXyh',
+  CONTACT_GITHUB: 'https://github.com/<MichaelYuhe>',
+  CONTACT_TELEGRAM: 'https://t.me/MichaelYuhe',
 
   // 网站字体
   FONT_STYLE: process.env.NEXT_PUBLIC_FONT_STYLE || 'font-serif', // ['font-serif','font-sans'] 两种可选，分别是衬线和无衬线: 参考 https://www.jianshu.com/p/55e410bd2115
